@@ -381,7 +381,12 @@ a:visited {
   /* #menuOptions {
     z-index: 1000;
   } */
-  
+  .select:active .bl{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
   .container {
     width: 35em;
     height: 35em;
