@@ -145,7 +145,7 @@ a:visited {
   padding-top: .5em;
   padding-bottom: .5em;
 }
-.select:hover .bl{
+.select:hover, .select:active .bl{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -381,6 +381,7 @@ a:visited {
   /* #menuOptions {
     z-index: 1000;
   } */
+  
   .container {
     width: 35em;
     height: 35em;
