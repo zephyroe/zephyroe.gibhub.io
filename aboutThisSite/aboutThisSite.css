@@ -145,6 +145,9 @@ img {
 
 
 @media only screen and (max-device-width: 480px) {
+  .select:hover .bl{
+    display: none;
+  }
   #spacer {
     font-size: 6em;
   }
