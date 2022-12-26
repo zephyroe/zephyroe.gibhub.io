@@ -50,9 +50,6 @@ a:visited {
 .openingPar {
   font-size: 1.1em;
 }
-#cBtn1 {
-  background-color: white;
-}
 .cBtn {
   bottom: -2em;
   position: absolute;
@@ -68,84 +65,6 @@ a:visited {
   color:rgb(40,40,40);
   cursor: pointer;
 }
-#menuOptions {
-  transform: rotate(180deg);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 0px;
-  height: 0px;
-  background-color: rgb(40,40,40);
-  visibility: collapse;
-}
-.select:hover .bl{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-.bl {
-  position: absolute;
-  /* top: 4.4em; */
-  display: none;
-  height: 5em;
-  width: 10.15em;
-  border: solid;
-  border-width: 0.15em;
-  border-color: rgb(40,40,40);
-  border-radius: 1em;
-  background-color: white;
-  z-index: 1;
-  padding-top: .5em;
-  padding-bottom: .5em;
-}
-.openingAnimation1 {
-  animation-name: openA1;
-  animation-duration: 4.5s;
-  animation-fill-mode: forwards;
-  /* transition-timing-function: auto; */
-}
-.openingAnimation2 {
-  animation-name: openA2;
-  animation-duration: 4.5s;
-  animation-fill-mode: forwards;
-}
-.openingAnimation3 {
-  animation-name: openA3;
-  animation-duration: 4.5s;
-  animation-fill-mode: forwards;
-}
-.openingAnimation4 {
-  animation-name: openA4;
-  animation-duration: 4.5s;
-  animation-fill-mode: forwards;
-}
-.openingAnimation5 {
-  animation-name: openA5;
-  animation-duration: 4.5s;
-  animation-fill-mode: forwards;
-}
-.openingAnimation6 {
-  animation-name: openA6;
-  animation-duration: 4.5s;
-  animation-fill-mode: forwards;
-}
-.textFadeAnimation {
-  animation-name: textFade;
-  animation-duration: 4.5s;
-  animation-fill-mode: forwards;
-}
-.noDisplayAnimation {
-  animation-name: noDisplay;
-  animation-duration: 4.5s;
-  animation-fill-mode: forwards;
-}
-.menuAnimation {
-  animation-name: displayMenu;
-  animation-duration: 4.5s;
-  animation-fill-mode: forwards;
-}
 .btn {
   width: 7.3em;
   height: 0px;
@@ -160,14 +79,43 @@ a:visited {
   align-items: center;
   background-color: white;
 }
+.bl {
+  position: absolute;
+  display: none;
+  height: 5em;
+  width: 10.15em;
+  border: solid;
+  border-width: 0.15em;
+  border-color: rgb(40,40,40);
+  border-radius: 1em;
+  background-color: white;
+  z-index: 1;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+.select:hover .bl{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+#cBtn1 {
+  background-color: white;
+}
+#menuOptions {
+  transform: rotate(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 0px;
+  height: 0px;
+  background-color: rgb(40,40,40);
+  visibility: collapse;
+}
 #homeButton {
   visibility: collapse;
   border-width: 1.5em;
-}
-.homeBtnAnimation {
-  animation-name: homeAnimation;
-  animation-duration: 4.5s;
-  animation-fill-mode: forwards;
 }
 #sourceCode {
   border-width: 1.5em;
@@ -178,101 +126,80 @@ a:visited {
 }
 #sourceCodeOptions {
   height: 10em;
-  /* width: 7em; */
   background-color: red;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
+#mobile-menu {
+  display: none;
+}
+.openingAnimation1 {
+  animation: openA1 4.5s forwards;
+}
+.openingAnimation2 {
+  animation: openA2 4.5s forwards;
+}
+.openingAnimation3 {
+  animation: openA3 4.5s forwards;
+}
+.openingAnimation4 {
+  animation: openA4 4.5s forwards;
+}
+.openingAnimation5 {
+  animation: openA5 4.5s forwards;
+}
+.openingAnimation6 {
+  animation: openA6 4.5s forwards;
+}
+.textFadeAnimation {
+  animation: textFade 4.5s forwards;
+}
+.noDisplayAnimation {
+  animation: noDisplay 4.5s forwards;
+}
+.menuAnimation {
+  animation: displayMenu 4.5s forwards;
+}
+.homeBtnAnimation {
+  animation-name: homeAnimation;
+  animation-duration: 4.5s;
+  animation-fill-mode: forwards;
+}
 .sourceBtnAnimation {
   animation-name: sourceAnimation;
   animation-duration: 4.5s;
   animation-fill-mode: forwards;
 }
-#mobile-menu {
-  display: none;
-}
 @keyframes sourceAnimation {
-  0% {
-    height: 0;
-    visibility: collapse;
-  }
-  81% {
-    height: 0;
-    visibility: collapse;
-  }
-  82% {
-    height: auto;
-    visibility: visible;
-  }
-  100% {
-    height: auto;
-    visibility: visible;
-  }
+  0% {height: 0; visibility: collapse;}
+  81% {height: 0; visibility: collapse;}
+  82% {height: auto; visibility: visible;}
+  100% {height: auto; visibility: visible;}
 }
 @keyframes homeAnimation {
-  0% {
-    visibility: collapse;
-  }
-  81% {
-    visibility: collapse;
-  }
-  82% {
-    visibility: visible;
-  }
-  100% {
-    visibility: visible;
-  }
+  0% {visibility: collapse;}
+  81% {visibility: collapse;}
+  82% {visibility: visible;}
+  100% {visibility: visible;}
 }
 @keyframes displayMenu {
-  0% {
-    visibility: collapse;
-    width: 0px;
-    height: 0px;
-  }
-  72% {
-    visibility: collapse;
-    width: 0px;
-    height: 0px;
-  }
-  85% {
-    visibility: visible;
-    width: 9em;
-    height: 9em;
-  }
-  100% {
-    visibility: visible;
-    width: 9em;
-    height: 9em;
-  }
+  0% {visibility: collapse; width: 0px; height: 0px;}
+  72% {visibility: collapse; width: 0px; height: 0px;}
+  85% {visibility: visible; width: 9em; height: 9em;}
+  100% {visibility: visible; width: 9em; height: 9em;}
 }
 @keyframes textFade {
-  30% {
-    color: white;
-  }
-  31% {
-    color: transparent;
-  }
-  100% {
-    color: transparent;
-  }
+  30% {color: white;}
+  31% {color: transparent;}
+  100% {color: transparent;}
 }
 @keyframes noDisplay {
-  20% {
-    width: auto;
-    height: auto;
-  }
-  21% {
-    width: 0px;
-    height: 0px;
-  }
-  100% {
-    width: 0px;
-    height: 0px;
-  }
+  20% {width: auto; height: auto;}
+  21% {width: 0px; height: 0px;}
+  100% {width: 0px; height: 0px;}
 }
-
 @keyframes openA1 {
   0% {
     color: rgb(40,40,40);
@@ -337,15 +264,8 @@ a:visited {
   }
 }
 @keyframes openA2 {
-  0% {
-    width: 12.5em;
-    height: 0px;
-  }
-  15% {
-    width: 31.25em;
-    height: 0px;
-    border-width: 1em;
-  }
+  0% {width: 12.5em; height: 0px;}
+  15% {width: 31.25em; height: 0px; border-width: 1em;}
   30% {
     height: 14em;
     width: 31.25em;
@@ -382,15 +302,8 @@ a:visited {
   }
 }
 @keyframes openA3 {
-  0% {
-    width: 12.5em;
-    height: 0px;
-  }
-  15% {
-    width: 31.25em;
-    height: 0px;
-    border-width: 1em;
-  }
+  0% {width: 12.5em; height: 0px;}
+  15% {width: 31.25em; height: 0px; border-width: 1em;}
   30% {
     height: 14em;
     width: 31.25em;
@@ -427,15 +340,8 @@ a:visited {
   }
 }
 @keyframes openA4 {
-  0% {
-    width: 12.5em;
-    height: 0px;
-  }
-  15% {
-    width: 31.25em;
-    height: 0px;
-    border-width: 1em;
-  }
+  0% {width: 12.5em; height: 0px;}
+  15% {width: 31.25em; height: 0px; border-width: 1em;}
   30% {
     height: 14em;
     width: 31.25em;
@@ -472,11 +378,7 @@ a:visited {
   }
 }
 @keyframes openA5 {
-  0% {
-    left: 8.5em;
-    width: 12.5em;
-    height: 0px;
-  }
+  0% {left: 8.5em; width: 12.5em; height: 0px;}
   15% {
     left: -.3125em;
     width: 31.25em;
@@ -596,113 +498,48 @@ a:visited {
 }
 
 @media only screen and (max-device-width: 600px) {
-  #sourceButton {
-    display: none;
+  h1 {
+    font-size: 5em;
   }
   p {
     font-size: 2em;
   }
-  h1 {
-    font-size: 5em;
-  }
-  .openingPar {
-    font-size: 1.9em;
+  #sourceButton {
+    display: none;
   }
   #mobile-menu {
     display: flex;
   }
-  /* #sourceButton {
-    height: 0;
-    visibility: collapse;
-  } */
   #sourceCode {
     border-width: 1em;
-  }
-  .bl {
-    position: absolute;
-    bottom: -11.3em;
-    display: none;
-    height: 10em;
-    width: 18.35em;
-    border: solid;
-    border-width: 0.15em;
-    border-color: rgb(40,40,40);
-    border-radius: 1em;
-    background-color: white;
-    z-index: 1;
-    padding-top: .5em;
-    padding-bottom: .5em;
   }
   #white-link {
     font-size: 2em;
   }
-  @keyframes displayMenu {
-    0% {
-      visibility: collapse;
-      width: 0px;
-      height: 0px;
-    }
-    72% {
-      visibility: collapse;
-      width: 0px;
-      height: 0px;
-    }
-    85% {
-      visibility: visible;
-      width: 20em;
-      height: 20em;
-    }
-    100% {
-      visibility: visible;
-      width: 20em;
-      height: 20em;
-    }
-  }
-  @keyframes sourceAnimation {
-    0% {
-      height: 0;
-      visibility: collapse;
-    }
-    72% {
-      height: 0;
-      visibility: collapse;
-    }
-    85% {
-      height: auto;
-      visibility: visible;
-    }
-    100% {
-      height: auto;
-      visibility: visible;
-    }
+  .openingPar {
+    font-size: 1.9em;
   }
   .btn {
-    width: 7.3em;
-    height: 0px;
-    border: solid;
     font-size: 2em;
-    border-width: 1em;
-    border-color: white;
     border-radius: 20px;
-    color:rgb(40,40,40);
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   .cBtn {
     bottom: -4em;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 19.5em;
-    height: 0px;
-    border: solid;
     border-width: 2em;
-    border-color: white;
     border-radius: 1em;
-    color:rgb(40,40,40);
-    cursor: pointer;
+  }
+  @keyframes displayMenu {
+    0% {visibility: collapse; width: 0px; height: 0px;}
+    72% {visibility: collapse; width: 0px; height: 0px;}
+    85% {visibility: visible; width: 20em; height: 20em;}
+    100% {visibility: visible; width: 20em; height: 20em;}
+  }
+  @keyframes sourceAnimation {
+    0% {height: 0; visibility: collapse;}
+    72% {height: 0; visibility: collapse;}
+    85% {height: auto; visibility: visible;}
+    100% {height: auto; visibility: visible;}
   }
   @keyframes openA1 {
     0% {
@@ -768,15 +605,8 @@ a:visited {
     }
   }
   @keyframes openA2 {
-    0% {
-      width: 12.5em;
-      height: 0px;
-    }
-    15% {
-      width: 31.25em;
-      height: 0px;
-      border-width: 2em;
-    }
+    0% {width: 12.5em; height: 0px;}
+    15% {width: 31.25em; height: 0px; border-width: 2em;}
     30% {
       height: 35em;
       width: 31.25em;
@@ -813,15 +643,8 @@ a:visited {
     }
   }
   @keyframes openA3 {
-    0% {
-      width: 12.5em;
-      height: 0px;
-    }
-    15% {
-      width: 31.25em;
-      height: 0px;
-      border-width: 2em;
-    }
+    0% {width: 12.5em; height: 0px;}
+    15% {width: 31.25em; height: 0px; border-width: 2em;}
     30% {
       height: 35em;
       width: 31.25em;
@@ -858,15 +681,8 @@ a:visited {
     }
   }
   @keyframes openA4 {
-    0% {
-      width: 12.5em;
-      height: 0px;
-    }
-    15% {
-      width: 31.25em;
-      height: 0px;
-      border-width: 2em;
-    }
+    0% {width: 12.5em; height: 0px;}
+    15% {width: 31.25em; height: 0px; border-width: 2em;}
     30% {
       height: 35em;
       width: 31.25em;
@@ -903,26 +719,15 @@ a:visited {
     }
   }
   @keyframes openA5 {
-    0% {
-      /* left: 8.5em; */
-      width: 12.5em;
-      height: 0px;
-    }
-    15% {
-      /* left: -.3125em; */
-      width: 31.25em;
-      height: 0px;
-      border-width: 2em;
-    }
+    0% {width: 12.5em; height: 0px;}
+    15% {width: 31.25em; height: 0px; border-width: 2em;}
     30% {
-      /* left: -.3125em; */
       height: 35em;
       width: 31.25em;
       border-radius: 0;
       border-width: .3125em;
     }
     45% {
-      /* left: 14.6125em; */
       height: 35em;
       width: 1.4em;
       border-radius: 0;
@@ -930,7 +735,6 @@ a:visited {
       transform: rotate(0deg);
     }
     60% {
-      /* left: 14.6125em; */
       height: 35em;
       width: 1.4em;
       border-radius: 0;
@@ -938,7 +742,6 @@ a:visited {
       transform: rotate(120deg);
     }
     80% {
-      /* left: 8.3125em; */
       height: 35em;
       width: 35em;
       border-radius: 50%;
@@ -946,7 +749,6 @@ a:visited {
       transform: rotate(120deg);
     }
     81% {
-      /* left: 8.3125em; */
       height: 35em;
       width: 35em;
       border-radius: 50%;
@@ -954,7 +756,6 @@ a:visited {
       transform: rotate(120deg);
     }
     100% {
-      /* left: -8.3125em; */
       height: 35em;
       width: 35em;
       border-radius: 50%;
@@ -963,28 +764,20 @@ a:visited {
     }
   }
   @keyframes openA6 {
-    0% {
-      /* left: 8.5em; */
-      color: rgb(40,40,40);
-      width: 12.5em;
-      height: 0px;
-    }
+    0% {color: rgb(40,40,40); width: 12.5em; height: 0px;}
     15% {
-      /* left: -.3125em; */
       color: rgb(40,40,40);
       width: 31.25em;
       height: 0px;
       border-width: 2em;
     }
     30% {
-      /* left: -.3125em; */
       height: 35em;
       width: 31.25em;
       border-radius: 0;
       border-width: .3125em;
     }
     45% {
-      /* left: 14.6125em; */
       height: 35em;
       width: 1.4em;
       border-radius: 0;
@@ -992,7 +785,6 @@ a:visited {
       transform: rotate(0deg);
     }
     60% {
-      /* left: 14.6125em; */
       height: 35em;
       width: 1.4em;
       border-radius: 0;
@@ -1000,7 +792,6 @@ a:visited {
       transform: rotate(150deg);
     }
     80% {
-      /* left: 8.3125em; */
       height: 35em;
       width: 35em;
       border-radius: 50%;
@@ -1008,7 +799,6 @@ a:visited {
       transform: rotate(150deg);
     }
     81% {
-      /* left: 8.3125em; */
       height: 35em;
       width: 35em;
       border-radius: 50%;
@@ -1016,8 +806,6 @@ a:visited {
       transform: rotate(150deg);
     }
     100% {
-
-      /* left: 25em; */
       height: 35em;
       width: 35em;
       border-radius: 50%;

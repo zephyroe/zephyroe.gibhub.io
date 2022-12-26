@@ -10,39 +10,6 @@ body {
   padding: 0;
   margin: 0;
 }
-header {
-  width: 100vw;
-  background-color: rgb(40,40,40);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-#spacer {
-  color: white;
-  font-size: .5em;
-}
-#discription {
-  color: black;
-  /* font-size: 2em; */
-}
-footer {
-  bottom: 0;
-  left: 0;
-  position: sticky;
-  width: 100vw;
-  background-color: rgb(40,40,40);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 3;
-}
-#footer-text {
-  color: white;
-}
 h1 {
   color: white;
   font-size: 2.5em;
@@ -54,6 +21,32 @@ a:link {
 a:visited {
   color: rgb(40,40,40);
   text-decoration: none;
+}
+header {
+  width: 100vw;
+  background-color: rgb(40,40,40);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+iframe {
+  width: 55vw;
+  min-width: 480px;
+}
+footer {
+  bottom: 0;
+  left: 0;
+  position: sticky;
+  width: 100vw;
+  background-color: rgb(40,40,40);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
 }
 .bl {
   position: absolute;
@@ -98,6 +91,28 @@ a:visited {
   justify-content: center;
   align-items: center;
 }
+.center-container {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.main-container {
+  width: 55vw;
+  min-width: 480px;
+  height: auto;
+  z-index: 3;
+}
+#spacer {
+  color: white;
+  font-size: .5em;
+}
+#discription {
+  color: black;
+}
+#footer-text {
+  color: white;
+}
 #btn1 {
   margin-bottom: .2em;
 }
@@ -106,39 +121,20 @@ a:visited {
   z-index: 3;
 }
 
-/* main */
-.center-container {
-  width: 100vw;
-  height: auto;
-  /* background: red; */
-  display: flex;
-  justify-content: center;
-}
-.main-container {
-  width: 55vw;
-  min-width: 480px;
-  height: auto;
-  /* background-color: red; */
-  /* border: solid;
-  border-color: green; */
-  z-index: 3;
-}
-iframe {
-  width: 55vw;
-  min-width: 480px;
-}
-
-
 
 @media only screen and (max-device-width: 480px) {
+  h1 {
+    font-size: 7em;
+  }
+  footer {
+    font-size: 2.5em;
+  }
+  iframe {
+    width: 80vw;
+    min-width: 380px;
+  }
   .select:hover .bl{
     display: none;
-  }
-  #spacer {
-    font-size: 6em;
-  }
-  #discription {
-    font-size: 2em;
   }
   .btn-contianer {
     position: relative;
@@ -151,29 +147,21 @@ iframe {
     width: 80vw;
     min-width: 380px;
     height: auto;
-    /* background-color: red; */
-    /* border: solid;
-    border-color: red; */
     z-index: 3;
-  }
-  iframe {
-    width: 80vw;
-    min-width: 380px;
   }
   .btn {
     border-radius: .7em;
+  }
+  #spacer {
+    font-size: 6em;
+  }
+  #discription {
+    font-size: 2em;
   }
   #btn1 {
     margin-bottom: 4px;
   }
   #btn2 {
     margin-top: 4px;
-  }
-
-  h1 {
-    font-size: 7em;
-  }
-  footer {
-    font-size: 2.5em;
   }
 }

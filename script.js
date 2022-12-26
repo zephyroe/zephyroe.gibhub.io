@@ -6,7 +6,6 @@
 // TO VIEW THE SOURCE CODE FROM A DIFFERENT PAGE, NAVIGATE TO THAT
 // PAGE AND SELECT AND SELECT THE DESIRED FILE FROM 'VIEW SOURCE CODE'
 
-console.log("hello")
 let continueBtn1 = document.getElementById('cBtn1');
 let continueBtn2 = document.getElementById('cBtn2');
 let continueBtn3 = document.getElementById('cBtn3');
@@ -14,7 +13,6 @@ let continueBtn4 = document.getElementById('cBtn4');
 let continueBtn5 = document.getElementById('cBtn5');
 let continueBtn6 = document.getElementById('cBtn6');
 let openingText = document.getElementById('text')
-console.log(openingText)
 
 let continueTxt = document.getElementById('continueText')
 let mainMenu = document.getElementById("menuOptions")

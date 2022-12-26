@@ -21,24 +21,6 @@ header {
   top: 0;
   left: 0;
 }
-#spacer {
-  color: white;
-  font-size: 0em;
-}
-footer {
-  bottom: 0;
-  left: 0;
-  position: sticky;
-  width: 100vw;
-  background-color: rgb(40,40,40);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 3;
-}
-#footer-text {
-  color: white;
-}
 h1 {
   color: white;
   font-size: 2.5em;
@@ -56,6 +38,13 @@ a:visited {
   color: rgb(40,40,40);
   text-decoration: none;
 }
+section {
+  width: 55vw;
+  min-width: 480px;
+  height: auto;
+  color: black;
+  font-size: 111%;
+}
 figure {
   display: flex;
   flex-direction: column;
@@ -66,6 +55,17 @@ img {
 }
 figcaption {
   font-size: .9em;
+}
+footer {
+  bottom: 0;
+  left: 0;
+  position: sticky;
+  width: 100vw;
+  background-color: rgb(40,40,40);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
 }
 .bl {
   position: absolute;
@@ -110,6 +110,24 @@ figcaption {
   justify-content: center;
   align-items: center;
 }
+.center-container {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.caption-container {
+  width: 100%;
+  text-align: center;
+}
+#spacer {
+  color: white;
+  font-size: 0em;
+}
+#footer-text {
+  color: white;
+}
 #btn1 {
   margin-bottom: .2em;
 }
@@ -117,31 +135,9 @@ figcaption {
   margin-top: .2em;
   z-index: 3;
 }
-
-/* main */
-.center-container {
-  width: 100vw;
-  height: auto;
-  /* background: red; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-section {
-  width: 55vw;
-  min-width: 480px;
-  height: auto;
-  color: black;
-  font-size: 111%;
-  /* background-color: red; */
-  /* border: solid;
-  border-color: green; */
-  /* z-index: 3; */
-}
 #top-photo {
   width: 65vw;
   min-width: 480px;
-  /* margin-bottom: 5px; */
 }
 #top-photo-mobile {
   display: none;
@@ -154,7 +150,6 @@ section {
   width: 22vw;
   height: auto;
   min-width: 200px;
-  /* background-color: blue; */
   float: right;
   margin-right: 0px;
   margin-bottom: 0px;
@@ -171,7 +166,6 @@ section {
   margin-right: 20px;
   margin-bottom: 0px;
   margin-left: 0px;
-  /* padding-left: 0px; */
 }
 #section3-image {
   width: 22vw;
@@ -188,32 +182,34 @@ section {
 #cs-text {
   padding-right: 15px;
 }
-.caption-container {
-  width: 100%;
-  /* background-color: red; */
-  text-align: center;
-}
 
 
 
 @media only screen and (max-device-width: 480px) {
-  .select:hover .bl{
-    display: none;
+  h1 {
+    font-size: 7em;
   }
-  #spacer {
-    font-size: 6em;
+  h2 {
+    font-size: 2.5em;
   }
-  .section-text {
-    font-size: 2em;
+  footer {
+    font-size: 2.5em;
+  }
+  section {
+    width: 80vw;
+    min-width: 380px;
   }
   figcaption {
     font-size: 2em;
   }
+  .select:hover .bl{
+    display: none;
+  }
+  .section-text {
+    font-size: 2em;
+  }
   .caption-container {
     width: 100%;
-  }
-  h2 {
-    font-size: 2.5em;
   }
   .btn-contianer {
     position: relative;
@@ -226,17 +222,13 @@ section {
     width: 80vw;
     min-width: 380px;
     height: auto;
-    /* background-color: red; */
-    /* border: solid;
-    border-color: red; */
     z-index: 3;
-  }
-  section {
-    width: 80vw;
-    min-width: 380px;
   }
   .btn {
     border-radius: .7em;
+  }
+  #spacer {
+    font-size: 6em;
   }
   #btn1 {
     margin-bottom: 4px;
@@ -254,13 +246,8 @@ section {
   }
   #section2-image-container {
     width: 37vw;
-    /* height: auto; */
     min-width: 200px;
     position: relative;
-    /* background-color: blue; */
-    /* float: right;
-    margin-bottom: 0px;
-    margin-left: 0px; */
     left: 30px;
   }
   #section3-image-container {
@@ -275,11 +262,9 @@ section {
   }
   #section4-image {
     width: 80vw;
-    /* min-width: 380px; */
   }
   #section3-image2 {
     width: 90vw;
-    /* min-width: 380px; */
   }
   #figure2 {
     width: 80vw;
@@ -295,11 +280,5 @@ section {
   }
   #cs-text {
     padding-right: 0px;
-  }
-  h1 {
-    font-size: 7em;
-  }
-  footer {
-    font-size: 2.5em;
   }
 }
