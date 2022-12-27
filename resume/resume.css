@@ -36,6 +36,7 @@ header {
 iframe {
   width: 55vw;
   min-width: 480px;
+  border: solid 1px black;
 }
 footer {
   bottom: 0;
@@ -103,6 +104,13 @@ footer {
   height: auto;
   z-index: 3;
 }
+#resume-regular {
+  height: 200vw;
+  max-height: 200vh;
+}
+#resume-mobile {
+  display: none;
+}
 #spacer {
   color: white;
   font-size: .5em;
@@ -121,7 +129,6 @@ footer {
   z-index: 3;
 }
 
-
 @media only screen and (max-device-width: 480px) {
   h1 {
     font-size: 7em;
@@ -130,8 +137,10 @@ footer {
     font-size: 2.5em;
   }
   iframe {
-    width: 80vw;
-    min-width: 380px;
+    width: 94vw;
+    position: relative;
+    right: 7vw;
+    /* min-width: 380px; */
   }
   .select:hover .bl{
     display: none;
@@ -151,6 +160,13 @@ footer {
   }
   .btn {
     border-radius: .7em;
+  }
+  #resume-mobile {
+    display: block;
+    height: 80vh;
+  }
+  #resume-regular {
+    display: none;
   }
   #spacer {
     font-size: 6em;
